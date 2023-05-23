@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectIBMModelStoreContainer" CdmEntityContainer="ProjectIBMEntities">
+    <EntitySetMapping Name="Appointments">
+      <EntityTypeMapping TypeName="ProjectIBMModel.Appointment">
+        <MappingFragment StoreEntitySet="Appointment">
+          <ScalarProperty Name="AppointmentId" ColumnName="AppointmentId" />
+          <ScalarProperty Name="AppointmentDate" ColumnName="AppointmentDate" />
+          <ScalarProperty Name="AppointmentSubject" ColumnName="AppointmentSubject" />
+          <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+          <ScalarProperty Name="PatientId" ColumnName="PatientId" />
+          <ScalarProperty Name="AppointmentDescription" ColumnName="AppointmentDescription" />
+          <ScalarProperty Name="AppointmentStatus" ColumnName="AppointmentStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doctors">
+      <EntityTypeMapping TypeName="ProjectIBMModel.Doctor">
+        <MappingFragment StoreEntitySet="Doctor">
+          <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+          <ScalarProperty Name="DoctorFirstName" ColumnName="DoctorFirstName" />
+          <ScalarProperty Name="DoctorLastName" ColumnName="DoctorLastName" />
+          <ScalarProperty Name="DoctorDescription" ColumnName="DoctorDescription" />
+          <ScalarProperty Name="DoctorEmail" ColumnName="DoctorEmail" />
+          <ScalarProperty Name="DoctorSpec" ColumnName="DoctorSpec" />
+          <ScalarProperty Name="DoctorPhone" ColumnName="DoctorPhone" />
+          <ScalarProperty Name="DoctorStatus" ColumnName="DoctorStatus" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Drugs">
+      <EntityTypeMapping TypeName="ProjectIBMModel.Drug">
+        <MappingFragment StoreEntitySet="Drug">
+          <ScalarProperty Name="DrugId" ColumnName="DrugId" />
+          <ScalarProperty Name="DrugName" ColumnName="DrugName" />
+          <ScalarProperty Name="DrugExpiry" ColumnName="DrugExpiry" />
+          <ScalarProperty Name="DrugDescription" ColumnName="DrugDescription" />
+          <ScalarProperty Name="DrugType" ColumnName="DrugType" />
+          <ScalarProperty Name="DrugDosage" ColumnName="DrugDosage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="ProjectIBMModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="OrderDescription" ColumnName="OrderDescription" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="SalesmanId" ColumnName="SalesmanId" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderItems">
+      <EntityTypeMapping TypeName="ProjectIBMModel.OrderItem">
+        <MappingFragment StoreEntitySet="OrderItem">
+          <ScalarProperty Name="OrderItemId" ColumnName="OrderItemId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="DrugId" ColumnName="DrugId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patients">
+      <EntityTypeMapping TypeName="ProjectIBMModel.Patient">
+        <MappingFragment StoreEntitySet="Patient">
+          <ScalarProperty Name="PatientId" ColumnName="PatientId" />
+          <ScalarProperty Name="PatientFirstName" ColumnName="PatientFirstName" />
+          <ScalarProperty Name="PatientLastName" ColumnName="PatientLastName" />
+          <ScalarProperty Name="PatientDescription" ColumnName="PatientDescription" />
+          <ScalarProperty Name="PatientEmail" ColumnName="PatientEmail" />
+          <ScalarProperty Name="PatientPhone" ColumnName="PatientPhone" />
+          <ScalarProperty Name="PatientBloodGroup" ColumnName="PatientBloodGroup" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prescriptions">
+      <EntityTypeMapping TypeName="ProjectIBMModel.Prescription">
+        <MappingFragment StoreEntitySet="Prescription">
+          <ScalarProperty Name="PrescriptionId" ColumnName="PrescriptionId" />
+          <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+          <ScalarProperty Name="PatientId" ColumnName="PatientId" />
+          <ScalarProperty Name="PrescriptionDate" ColumnName="PrescriptionDate" />
+          <ScalarProperty Name="Advice" ColumnName="Advice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrescriptionItems">
+      <EntityTypeMapping TypeName="ProjectIBMModel.PrescriptionItem">
+        <MappingFragment StoreEntitySet="PrescriptionItem">
+          <ScalarProperty Name="PrescriptionItemId" ColumnName="PrescriptionItemId" />
+          <ScalarProperty Name="PrescriptionId" ColumnName="PrescriptionId" />
+          <ScalarProperty Name="DrugId" ColumnName="DrugId" />
+          <ScalarProperty Name="Dosage" ColumnName="Dosage" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Instruction" ColumnName="Instruction" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Salesmen">
+      <EntityTypeMapping TypeName="ProjectIBMModel.Salesman">
+        <MappingFragment StoreEntitySet="Salesman">
+          <ScalarProperty Name="SalesmanId" ColumnName="SalesmanId" />
+          <ScalarProperty Name="SalesmanFirstName" ColumnName="SalesmanFirstName" />
+          <ScalarProperty Name="SalesmanLastName" ColumnName="SalesmanLastName" />
+          <ScalarProperty Name="SalesmanDescription" ColumnName="SalesmanDescription" />
+          <ScalarProperty Name="SalesmanEmail" ColumnName="SalesmanEmail" />
+          <ScalarProperty Name="SalesmanPhone" ColumnName="SalesmanPhone" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="ProjectIBMModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="SupplierFirstName" ColumnName="SupplierFirstName" />
+          <ScalarProperty Name="SupplierLastName" ColumnName="SupplierLastName" />
+          <ScalarProperty Name="SupplierDescription" ColumnName="SupplierDescription" />
+          <ScalarProperty Name="SupplierEmail" ColumnName="SupplierEmail" />
+          <ScalarProperty Name="SupplierPhone" ColumnName="SupplierPhone" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ProjectIBMModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+          <ScalarProperty Name="LoginStatus" ColumnName="LoginStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

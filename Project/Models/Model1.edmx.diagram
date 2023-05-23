@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="79842d9b2b9f4415916d1ec9f0c96dc8" Name="Diagram1">
+        <EntityTypeShape EntityType="ProjectIBMModel.Appointment" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectIBMModel.Doctor" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectIBMModel.Drug" Width="1.5" PointX="8.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectIBMModel.Order" Width="1.5" PointX="5.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectIBMModel.OrderItem" Width="1.5" PointX="7.5" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectIBMModel.Patient" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectIBMModel.Prescription" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectIBMModel.PrescriptionItem" Width="1.5" PointX="10.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectIBMModel.Salesman" Width="1.5" PointX="3" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectIBMModel.Supplier" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectIBMModel.User" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <AssociationConnector Association="ProjectIBMModel.FK__Appointme__Docto__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__Appointme__Patie__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__Doctor__UserId__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__Prescript__Docto__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__OrderItem__DrugI__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__Prescript__DrugI__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__Order__SalesmanI__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__Order__SupplierI__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__OrderItem__Order__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__Patient__UserId__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__Prescript__Patie__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__Prescript__Presc__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__Salesman__UserId__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectIBMModel.FK__Supplier__UserId__44FF419A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
